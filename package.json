@@ -1,0 +1,47 @@
+{
+  "name": "@lxgicstudios/schema-diff",
+  "version": "1.0.0",
+  "description": "Compare two database schemas (SQL or JSON). Find added, removed, and changed tables, columns, types, and constraints. Zero dependencies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "schema-diff": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "schema",
+    "diff",
+    "database",
+    "sql",
+    "compare",
+    "migration",
+    "breaking-changes",
+    "cli",
+    "postgres",
+    "mysql",
+    "json-schema",
+    "columns",
+    "tables",
+    "constraints",
+    "typescript"
+  ],
+  "author": "LXGIC Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/schema-diff.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "typescript": "^5.9.3"
+  }
+}
